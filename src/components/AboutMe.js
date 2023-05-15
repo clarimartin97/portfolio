@@ -57,9 +57,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                     Mi nombre es Clara Martín y soy desarrolladora y diseñadora de aplicaciones móviles.
                     Al terminar el liceo me costó encontrar algo que me interesara estudiar; probé con administración de empresas, traductorado, entre otras. En 2021 comencé una carrera en ORT que sin saberlo, iba a cambiar mi vida. Descubrí mi vocación, y desde entonces, no he parado de estudiar.
                     <br></br>
-                    <br></br>
                     <br></br>Durante mi carrera, tuve un compañero muy especial que me acompañó en todo momento: mi perra Pochi. Ella estuvo presente en cada paso de mi camino, desde las primeras clases hasta los proyectos finales. Es increíble cómo los animales pueden ser una fuente de apoyo y motivación en nuestras vidas. Estoy agradecida de tenerla a mi lado y de haber podido compartir este camino juntas.
-                    <br></br>
                     <br></br>
                     <br></br>
                     Actualmente, me estoy formando como Analista en Tecnologías de la Información, y gracias a los conocimientos adquiridos como Diseñador Digital, sé bien donde estoy parada y me siento muy calificada en cuanto a herramientas y conocimientos.
