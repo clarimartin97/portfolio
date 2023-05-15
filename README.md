@@ -98,7 +98,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/clarimartin97tes/portfolio.git
+   git clone https://github.com/clarimartin97/portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -139,26 +139,26 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 
 If you have any inquiries, don't hesitate to reach out to me via socials or by sending an email to <a href="mailto:michael-yeates@outlook.com">michael-yeates@outlook.com</a>
 
-<a href="https://www.linkedin.com/in/clarimartin97tes/">LinkedIn</a> | <a href="https://github.com/clarimartin97tes/">GitHub</a>
+<a href="https://www.linkedin.com/in/clarimartin97/">LinkedIn</a> | <a href="https://github.com/clarimartin97/">GitHub</a>
 
-Project Link: [https://github.com/clarimartin97tes/portfolio](https://github.com/clarimartin97tes/portfolio)
+Project Link: [https://github.com/clarimartin97/portfolio](https://github.com/clarimartin97/portfolio)
 
   <p align="right"><a href="#readme-top">back to top</a></p>
   
   <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/clarimartin97tes/portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/clarimartin97tes/portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/clarimartin97tes/portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/clarimartin97tes/portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/clarimartin97tes/portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/clarimartin97tes/portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/clarimartin97tes/portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/clarimartin97tes/portfolio/issues
-[license-shield]: https://img.shields.io/github/license/clarimartin97tes/portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/clarimartin97tes/portfolio/blob/main/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/clarimartin97/portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/clarimartin97/portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/clarimartin97/portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/clarimartin97/portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/clarimartin97/portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/clarimartin97/portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/clarimartin97/portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/clarimartin97/portfolio/issues
+[license-shield]: https://img.shields.io/github/license/clarimartin97/portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/clarimartin97/portfolio/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/clarimartin97tes
+[linkedin-url]: https://linkedin.com/in/clarimartin97
 
   <!-- UPDATE PLACEHOLDER IMAGES HERE -->
 
