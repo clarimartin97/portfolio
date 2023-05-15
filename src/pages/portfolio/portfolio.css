@@ -1,4 +1,3 @@
-/* --- MOBILE STYLES --- */
 
 .portfolio {
   display: flex;
@@ -93,7 +92,6 @@
   margin-bottom: 10px;
 }
 
-/* --- MEDIA QUEIRES --- */
 
 @media (min-width: 750px) {
   .projectCard {

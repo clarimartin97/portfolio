@@ -2,7 +2,7 @@ import PageHeader from "../../components/PageHeader";
 import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
 
-const Contact = ({ className, name, email, location }) => {
+const Contact = ({ className }) => {
   return (
     <section className={`contact ${className}`}>
       <PageHeader title="Contacto" description="Conóceme" />
@@ -12,7 +12,7 @@ const Contact = ({ className, name, email, location }) => {
             <Form />
           </div>
           <div className="col-12 col-lg-6">
-            <ContactInfo /* name={name} location={location} email={email} */ />
+            <ContactInfo />
           </div>
         </div>
       </div>
