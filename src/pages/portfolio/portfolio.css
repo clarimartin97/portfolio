@@ -7,6 +7,7 @@
   margin-top: var(--spacing);
   padding-bottom: var(--spacing);
   background-color: black;
+  width: 100%!important;
 }
 
 .projectCard {
@@ -14,17 +15,15 @@
   border-radius: 3px;
   margin-bottom: 20px;
   overflow: hidden;
-  position: relative;
+  position: relative; 
   transition: all 0.5s ease-in-out;
   flex-direction: column;
   padding: 0 !important;
   cursor: pointer;
+  width: 100%!important;
+  border-radius: 16px;
 }
 
-.row {
-  padding: 0;
-  margin: 0;
-}
 
 .textWrap {
   transition: all 0.9s ease-in-out;
@@ -37,6 +36,13 @@
 
 .imageContainer img {
   height: 12em;
+  margin-top: 25px;
+  margin-right: 180px;
+  transition: all 1.3s ease-in-out;
+}
+
+.imageCont img {
+  height: 3em;
   margin-top: 25px;
   margin-right: 180px;
   transition: all 1.3s ease-in-out;
@@ -74,7 +80,7 @@
 }
 
 .closeModal {
-  margin-left: 250px;
+  margin-left: 990px;
   margin-top: -20px;
 }
 
@@ -109,6 +115,10 @@
     transform: translateX(30%);
     transition: all 0.3s ease-in-out;
   }
+  .imageCont {
+    transform: translateX(50%);
+    transition: all 0.3s ease-in-out;
+  }
 
   .projectCard:hover .imageContainer {
     transform: translateX(-70%);
@@ -125,9 +135,16 @@
   .projectCard:hover .imageContainer img {
     scale: 1.4;
   }
+  .projectCard:hover .imageCont img {
+    scale: 1.4;
+  }
 
   .imageContainer {
     transform: translateX(30%);
+    transition: all 0.3s ease-in-out;
+  }
+  .imageCont {
+    transform: translateX(50%);
     transition: all 0.3s ease-in-out;
   }
 

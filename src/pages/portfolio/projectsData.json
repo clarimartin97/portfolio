@@ -1,7 +1,11 @@
+
 [
-  {
+  { 
     "title": "EmpleoYa",
     "image": "./projectImages/empleoYa.svg",
+    "image1": "./projectImages/1.png",
+    "image2": "./projectImages/2.png",
+    "image3": "./projectImages/3.png",
     "description": "El propósito de esta aplicación móvil es brindar una solución fácil y conveniente para personas que están estudiando y tienen poco tiempo para trabajar a tiempo completo o para aquellos que ya tienen un trabajo, pero desean ganar ingresos adicionales. ",
     "technologies": "React Native | JavaScript | HTML | Mongoose",
     "github": "https://github.com/clarimartin97/empleoYa-frontend",

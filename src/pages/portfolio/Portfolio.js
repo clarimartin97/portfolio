@@ -11,6 +11,9 @@ const Portfolio = () => {
         title={project.title}
         technologies={project.technologies}
         image={project.image}
+        image1={project.image1}
+        image2={project.image2}
+        image3={project.image3}
         color={project.bgcolor}
         github={project.github}
         deployed={project.deployed}
@@ -22,7 +25,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <PageHeader title="Portafolio" description="Les muestro mi trabajo" />
-      <div className="row">
+      <div /* className="row" */>
         <ProjectList />
       </div>
     </section>

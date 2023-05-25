@@ -3,9 +3,13 @@ import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
-const Project = ({ technologies, title, image, color, id, github, deployed, video, description }) => {
+
+const Project = ({ technologies, title, image, image1, image2, image3, color, id, github, deployed, video, description }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -30,7 +34,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, vide
   return (
     <motion.div
       ref={ref}
-      className="col-sm-12 col-lg-6"
+
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -62,7 +66,7 @@ const Project = ({ technologies, title, image, color, id, github, deployed, vide
             padding: "60px",
             display: "flex",
             flexDirection: "column",
-            width: "400px",
+            width: "80%",
             top: "50%",
             left: "50%",
             right: "auto",
@@ -75,6 +79,17 @@ const Project = ({ technologies, title, image, color, id, github, deployed, vide
       >
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
+        <Slider >
+          <div className="imageCont">
+            <img src={image1} alt="Slide 1" />
+          </div>
+          <div className="imageCont">
+            <img src={image2} alt="Slide 2" />
+          </div>
+          <div className="imageCont">
+            <img src={image3} alt="Slide 3" />
+          </div>
+        </Slider>
         <p className="projectDescription">{description}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           Repo de Github

@@ -16,13 +16,10 @@ const NavLinks = () => {
         )}
       </button>
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
-        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
-          Inicio
-        </NavLink>
         <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
           Sobre mí
         </NavLink>
-        <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
+        <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
           Portafolio
         </NavLink>
         <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
