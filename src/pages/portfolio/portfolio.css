@@ -24,6 +24,33 @@
   border-radius: 16px;
 }
 
+.contenedorSlider { 
+  position: relative;}
+
+
+  button.back {   width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.100);
+    cursor: pointer;
+    color: #01be96;
+    border: none;
+    position: absolute;
+    top: 45%;
+  }
+
+  button.next
+   {   width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.100);
+    cursor: pointer;
+    color: #01be96;
+    border: none;
+    position: absolute;
+    top: 45%;
+    right: 1rem;
+  }
+  
+
 
 .textWrap {
   transition: all 0.9s ease-in-out;
@@ -42,9 +69,8 @@
 }
 
 .imageCont img {
-  height: 3em;
+  height: 20em;
   margin-top: 25px;
-  margin-right: 180px;
   transition: all 1.3s ease-in-out;
 }
 
@@ -80,8 +106,7 @@
 }
 
 .closeModal {
-  margin-left: 990px;
-  margin-top: -20px;
+align-self: self-end;
 }
 
 .closeModal:hover {

@@ -1,7 +1,6 @@
 const PageHeader = ({ title }) => (
-  <>
-    <h3 className="pageTitle">{title}</h3>
-  </>
+    <>
+        <h3 className="pageTitle">{title}</h3>
+    </>
 );
-
-export default PageHeader;
+export default PageHeader

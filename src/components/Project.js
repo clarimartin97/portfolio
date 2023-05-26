@@ -6,6 +6,7 @@ import closeModal from "../images/close.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SliderProyects from "./SliderProyects";
 
 
 
@@ -79,17 +80,7 @@ const Project = ({ technologies, title, image, image1, image2, image3, color, id
       >
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
-        <Slider >
-          <div className="imageCont">
-            <img src={image1} alt="Slide 1" />
-          </div>
-          <div className="imageCont">
-            <img src={image2} alt="Slide 2" />
-          </div>
-          <div className="imageCont">
-            <img src={image3} alt="Slide 3" />
-          </div>
-        </Slider>
+        <SliderProyects></SliderProyects>
         <p className="projectDescription">{description}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           Repo de Github
