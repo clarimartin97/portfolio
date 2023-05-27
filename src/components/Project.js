@@ -57,46 +57,47 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
           <img src={image} alt="Laptop displaying the application" />
         </div>
       </div>
-      <Modal
-        isOpen={showModal}
-        onRequestClose={handleCloseModal}
-        style={{
-          content: {
-            backgroundColor: "#101010",
-            color: "#9f9f9f",
-            padding: "60px",
-            display: "flex",
-            flexDirection: "column",
-            width: "80%",
-            top: "50%",
-            left: "50%",
-            right: "auto",
-            bottom: "auto",
-            marginRight: "-50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: "999",
-          },
-        }}
-      >
-        <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
-        <h3 className="modalTitle">{title}</h3>
-        <SliderProyects image1={image1} image2={image2} image3={image3} image4={image4}></SliderProyects>
-        <p className="projectDescription">{description}</p>
-        <button className="btn" onClick={() => (window.location.href = github)}>
-          Repo de Github
-        </button>
-        <button className="btn" onClick={() => {
-          if (goToDemo) {
-            window.open(deployed, '_blank')
+      <div className="divModal">
+        <Modal
+          isOpen={showModal}
+          onRequestClose={handleCloseModal}
+          style={{
+            content: {
+              backgroundColor: "#101010",
+              color: "#9f9f9f",
+              margin: "5vw",
+              padding: "9vw", /* Utilizando unidades de vista de ventana */
+              display: "flex",
+              flexDirection: "column",
+              width: "80%", /* Utilizando porcentaje */
+              maxWidth: "600px", /* Establece un ancho máximo si es necesario */
+              margin: "auto", /* Centra horizontalmente el modal */
+              zIndex: "999",
+              objectFit: "contain"
+            },
+          }}
+        >
+
+          <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+          <h3 className="modalTitle">{title}</h3>
+          <SliderProyects image1={image1} image2={image2} image3={image3} image4={image4}></SliderProyects>
+          <p className="projectDescription">{description}</p>
+          <button className="btn" onClick={() => (window.location.href = github)}>
+            Repo de Github
+          </button>
+          <button className="btn" onClick={() => {
+            if (goToDemo) {
+              window.open(deployed, '_blank')
+            }
+            else {
+              window.open(video, '_blank')
+            }
           }
-          else {
-            window.open(video, '_blank')
-          }
-        }
-        }>
-          {buttonText}
-        </button>
-      </Modal>
+          }>
+            {buttonText}
+          </button>
+        </Modal>
+      </div>
     </motion.div>
   );
 };

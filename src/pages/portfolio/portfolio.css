@@ -141,6 +141,11 @@ align-self: self-end;
   color: white;
 }
 
+.divModal{
+  width: fit-content;
+  background-color: red;
+}
+
 .projectDescription {
   margin-bottom: 10px;
   align-self: center;
