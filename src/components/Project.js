@@ -65,15 +65,31 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
             content: {
               backgroundColor: "#101010",
               color: "#9f9f9f",
-              margin: "5vw",
-              padding: "9vw", /* Utilizando unidades de vista de ventana */
+              padding: "60px",
               display: "flex",
               flexDirection: "column",
-              width: "80%", /* Utilizando porcentaje */
-              maxWidth: "600px", /* Establece un ancho máximo si es necesario */
-              margin: "auto", /* Centra horizontalmente el modal */
+              width: "80%",
+              top: "50%",
+              left: "50%",
+              right: "auto",
+              bottom: "auto",
+              marginRight: "-50%",
+              transform: "translate(-50%, -50%)",
               zIndex: "999",
-              objectFit: "contain"
+              objectFit: "contain",
+              "@media (max-width: 750px)": {
+                backgroundColor: "#101010",
+                color: "#9f9f9f",
+                margin: "5vw",
+                padding: "9vw",
+                display: "flex",
+                flexDirection: "column",
+                width: "80%",
+                maxWidth: "600px",
+                margin: "auto",
+                zIndex: "999",
+                objectFit: "contain",
+              }
             },
           }}
         >
