@@ -77,7 +77,7 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
               transform: "translate(-50%, -50%)",
               zIndex: "999",
               objectFit: "contain",
-              "@media (max-width: 750px)": {
+              "@media (maxWidth: 750px)": {
                 backgroundColor: "#101010",
                 color: "#9f9f9f",
                 margin: "5vw",
