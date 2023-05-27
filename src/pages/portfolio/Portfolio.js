@@ -2,6 +2,7 @@ import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
 
+
 const Portfolio = () => {
   const ProjectList = () =>
     projectData.map((project, i) => (
@@ -14,6 +15,7 @@ const Portfolio = () => {
         image1={project.image1}
         image2={project.image2}
         image3={project.image3}
+        image4={project.image4}
         color={project.bgcolor}
         github={project.github}
         deployed={project.deployed}
@@ -25,7 +27,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <PageHeader title="Portafolio" description="Les muestro mi trabajo" />
-      <div /* className="row" */>
+      <div className="contenedorGeneral">
         <ProjectList />
       </div>
     </section>

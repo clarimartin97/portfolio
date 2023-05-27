@@ -86,6 +86,8 @@ body {
   margin-top: 10px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
+  align-self: center;
+  width: 20%;
 }
 
 .btn:hover {
@@ -219,5 +221,10 @@ header {
 
   .closed {
     background-color: transparent;
+  }
+}
+@media(max-width: 750px){
+  .btn {
+        width: -webkit-fill-available;
   }
 }

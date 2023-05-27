@@ -10,7 +10,7 @@ import SliderProyects from "./SliderProyects";
 
 
 
-const Project = ({ technologies, title, image, image1, image2, image3, color, id, github, deployed, video, description }) => {
+const Project = ({ technologies, title, image, image1, image2, image3, image4, color, id, github, deployed, video, description }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -80,7 +80,7 @@ const Project = ({ technologies, title, image, image1, image2, image3, color, id
       >
         <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
         <h3 className="modalTitle">{title}</h3>
-        <SliderProyects></SliderProyects>
+        <SliderProyects image1={image1} image2={image2} image3={image3} image4={image4}></SliderProyects>
         <p className="projectDescription">{description}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           Repo de Github
