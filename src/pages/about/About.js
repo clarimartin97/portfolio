@@ -11,3 +11,4 @@ const About = ({ className, name, location, email, availability }) => {
 };
 
 export default About;
+

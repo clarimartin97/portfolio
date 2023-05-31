@@ -28,7 +28,6 @@
 .projectCard {
   color: white;
   border-radius: 3px;
-  margin-bottom: 20px;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease-in-out;
@@ -128,7 +127,7 @@ button.next {
 
 .projectCard::before {
   content: "";
-  display: block;
+  display: grid !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -230,6 +229,30 @@ button.next {
 
   .tech {
     font-size: 14px;
+  }
+
+  .contenedorGeneral > * {
+    margin-bottom: 1% !important;
+  }
+  .row1 {
+    display: grid;
+    grid-template-columns: 39% 60%;
+    column-gap: 1%;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 29% 40% 29%;
+    column-gap: 1%;
+  }
+  .row3 {
+    display: grid;
+    grid-template-columns: 60% 39%;
+    column-gap: 1%;
+  }
+  .row4 {
+    display: grid;
+    grid-template-columns: 29% 40% 29%;
+    column-gap: 1%;
   }
 }
 

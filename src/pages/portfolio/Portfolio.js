@@ -2,26 +2,37 @@ import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
 
+const projectsPerSection = [
+  [1, 2],
+  [3, 4, 5],
+  [6, 7],
+  [8, 9, 10]
+]
+
 
 const Portfolio = () => {
   const ProjectList = () =>
-    projectData.map((project, i) => (
-      <Project
-        key={i}
-        id={project.id}
-        title={project.title}
-        technologies={project.technologies}
-        image={project.image}
-        image1={project.image1}
-        image2={project.image2}
-        image3={project.image3}
-        image4={project.image4}
-        color={project.bgcolor}
-        github={project.github}
-        deployed={project.deployed}
-        video={project.video}
-        description={project.description}
-      />
+    projectsPerSection.map((cards, a) => (
+      < div key={a} className={`row${a + 1}`}>
+        {projectData.slice(cards[0] - 1, cards[cards.length - 1]).map((project, i) => (
+          <Project
+            key={i}
+            id={project.id}
+            title={project.title}
+            technologies={project.technologies}
+            image={project.image}
+            image1={project.image1}
+            image2={project.image2}
+            image3={project.image3}
+            image4={project.image4}
+            color={project.bgcolor}
+            github={project.github}
+            deployed={project.deployed}
+            video={project.video}
+            description={project.description}
+          />
+        ))}
+      </div >
     ));
 
   return (
