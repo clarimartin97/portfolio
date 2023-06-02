@@ -12,7 +12,7 @@
     "github": "https://github.com/clarimartin97/empleoYa-frontend",
     "deployed": "https://youtu.be/dTah1o5f9A0",
     "video": "",
-    "bgcolor": "#f37737",
+    "bgcolor": "./projectImages/1.png",
     "id": "1"
   },
   {
@@ -42,7 +42,7 @@
     "github": "https://github.com/clarimartin97/AvengersReact",
     "deployed": "https://youtu.be/iOPvEme3iGQ",
     "video": "",
-    "bgcolor": "",
+    "bgcolor": "./projectImages/2.png",
     "id": "3"
   },
   {
@@ -89,7 +89,7 @@
     "github": "https://github.com/clarimartin97/PW2---OB2",
     "deployed": "https://youtu.be/CsJLka90nDg",
     "video":"",
-    "bgcolor": "./projectImages/MantraBoard.png",
+    "bgcolor": "./projectImages/nacionalBoard.png",
     "id": "6"
   },
   {
@@ -104,7 +104,7 @@
     "github": "https://github.com/clarimartin97/PW2---OB1",
     "deployed": "https://youtu.be/EFNlmZowGGk",    
     "video":"",
-    "bgcolor": "#f37737",
+    "bgcolor": "./projectImages/3.png",
     "id": "7"
   },
   {
@@ -134,7 +134,7 @@
     "github": "https://github.com/clarimartin97/criptoconvertidor",
     "deployed": "https://www.youtube.com/watch?v=Q7rte0zU6is",
     "video":"",
-    "bgcolor": "#6c4bf4",
+    "bgcolor": "./projectImages/4.png",
     "id": "9"
   },
   {
