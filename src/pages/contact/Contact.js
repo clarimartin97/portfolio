@@ -3,20 +3,20 @@ import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
 import Background from "../../components/Background";
 
-const Contact = ({ className }) => {
+const Contact = () => {
   return (
-    <section className={`contact ${className}`}>
+    <section className="contact">
       <PageHeader title="Contacto" description="Conóceme" />
 
-      <div className="contactWrap container">
-        <div className="container">
+      <div className="container">
+        <div >
           <Background />
           <div className="contenido">
-            <div className="row">
-              <div className="col-12 col-lg-6">
+            <div className="contentContacto">
+              <div >
                 <Form />
               </div>
-              <div className="col-12 col-lg-6">
+              <div >
                 <ContactInfo />
               </div>
             </div>

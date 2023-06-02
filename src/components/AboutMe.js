@@ -35,9 +35,9 @@ const AboutMe = ({ name }) => {
     <div className="container">
       <Background />
       <div className="contenido">
-        <div className="row">
+        <div className="aboutContent">
           <motion.div
-            className="personalImage col-12 col-lg-4"
+            className="personalImage "
             ref={ref}
             initial={{ x: "-10vw", opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
@@ -46,7 +46,7 @@ const AboutMe = ({ name }) => {
             <img src={aboutMeImg} alt={name} />
           </motion.div>
           <motion.div
-            className="personalInfo col-12 col-lg-8"
+            className="personalInfo"
             ref={ref}
             initial={{ x: "10vw", opacity: 0 }}
             animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}

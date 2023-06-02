@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   margin-top: var(--spacing);
   padding-bottom: var(--spacing);
   background-color: black;
@@ -28,7 +27,6 @@
 .projectCard {
   color: white;
   border-radius: 3px;
-  overflow: hidden;
   position: relative;
   transition: all 0.5s ease-in-out;
   flex-direction: column;

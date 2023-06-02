@@ -1,14 +1,17 @@
-body {
-  overflow-x: hidden;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
+  align-content: space-around;
   align-items: center;
   margin-top: var(--spacing);
 }
-
+.contentContacto {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100%;
+  padding: 0 3% 0 3%;
+}
 .contentTitle {
   color: var(--text-color);
   padding-bottom: 10px;
@@ -19,6 +22,7 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: var(--sm-spacing);
   margin-left: 10px;
+  padding-left: 200px;
 }
 
 .contentDescription {
@@ -38,7 +42,6 @@ body {
 
 .formGroup {
   padding-right: 15px;
-
 }
 
 div.socialVertical {
@@ -51,7 +54,6 @@ div.socialVertical {
   font-size: 53px !important;
   margin-bottom: 20px;
 }
-
 
 .formControl {
   font-size: 15px;
@@ -101,10 +103,10 @@ textarea {
   margin-bottom: var(--sm-spacing);
 }
 
-.contact .socialIcons {
+/* .contact .socialIcons {
   display: none;
 }
-
+ */
 .mediaWrap a:hover {
   color: #03b979;
 }
@@ -128,5 +130,18 @@ textarea {
     display: inline-block;
     margin-bottom: 7px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .contentContacto {
+    flex-direction: column;
+    padding: 0 6% 0 6%;
+  }
+  .contenido {
+    top: 12%;
+  }
+  .contactInfo {
+    padding-left: 0;
   }
 }

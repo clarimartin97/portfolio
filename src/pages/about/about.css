@@ -5,7 +5,15 @@
   margin-top: var(--spacing);
   z-index: 1;
 }
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  padding: 0 3% 0 3%;
+}
 
+.personalInfo {
+  padding-left: 13px;
+}
 .personalImage {
   display: flex;
   justify-content: center;
@@ -108,15 +116,22 @@ p.disponibilidad {
     justify-content: center;
   }
 }
+@media (max-width: 750px) {
+}
 
 @media (max-width: 950px) {
   .personalImage {
     margin-bottom: 20px;
   }
   .infoContainer span {
-    text-align: -webkit-center;
+    text-align: center;
+    padding: 5%;
   }
   .buttonContainer {
     margin-left: 10px;
+    justify-content: center;
+  }
+  .aboutContent {
+    flex-direction: column;
   }
 }

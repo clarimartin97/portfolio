@@ -43,10 +43,10 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
     >
       <div
         style={{ backgroundImage: `url(${color})` }}
-        className="backgroundImage projectCard d-flex align-items-center justify-content-center p-5"
+        className="backgroundImage projectCard "
         onClick={handleOpenModal}
       >
-        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
+        <div className="textWrap">
           <p className="tech">
             <em>{technologies}</em>
           </p>

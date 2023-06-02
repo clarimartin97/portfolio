@@ -90,7 +90,7 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 formGroup">
+      <div className=" formGroup">
         <input
           type="text"
           className="formControl"
@@ -102,7 +102,7 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 formGroup">
+      <div className="formGroup">
         <textarea
           className="formControl"
           onChange={handleChange}
@@ -114,7 +114,7 @@ const Form = () => {
           required
         ></textarea>
       </div>
-      <div className="col-12 formGroup formSubmit">
+      <div className=" formGroup formSubmit">
         <button className="btn enviarMensaje">{success ? "Mensaje enviado" : "Enviar mensaje"}</button>
       </div>
     </motion.form>

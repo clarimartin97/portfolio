@@ -3,7 +3,7 @@ import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
 
-const AnimatedRoutes = ({ className, personalDetails }) => {
+const AnimatedRoutes = ({ personalDetails }) => {
   const location = useLocation();
 
   return (
@@ -13,7 +13,6 @@ const AnimatedRoutes = ({ className, personalDetails }) => {
         path="/about"
         element={
           <About
-            className={className}
             name={personalDetails.name}
 
           />
@@ -23,7 +22,7 @@ const AnimatedRoutes = ({ className, personalDetails }) => {
       <Route
         path="/contact"
         element={
-          <Contact className={className} name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
+          <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
         }
       />
     </Routes>
