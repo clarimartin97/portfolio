@@ -11,12 +11,12 @@
   background-color: "#101010";
   color: "#9f9f9f";
   margin: "5vw";
-  padding: "9vw"; /* Utilizando unidades de vista de ventana */
+  padding: "9vw";
   display: "flex";
   flex-direction: "column";
-  width: "80%"; /* Utilizando porcentaje */
-  max-width: "600px"; /* Establece un ancho máximo si es necesario */
-  margin: "auto"; /* Centra horizontalmente el modal */
+  width: "80%";
+  max-width: "600px";
+  margin: "auto";
   z-index: 999;
   object-fit: contain;
 }
@@ -38,6 +38,12 @@
   border-radius: 16px;
 }
 
+.backgroundImage {
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .contenedorSlider {
   position: relative;
 }

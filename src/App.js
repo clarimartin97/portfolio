@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <AnimatedRoutes className="background" personalDetails={personalDetails} />
+      <AnimatedRoutes personalDetails={personalDetails} />
     </>
   );
 }

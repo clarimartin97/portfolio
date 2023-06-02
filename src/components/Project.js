@@ -42,8 +42,8 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       <div
-        style={{ backgroundColor: color }}
-        className="projectCard d-flex align-items-center justify-content-center p-5"
+        style={{ backgroundImage: `url(${color})` }}
+        className="backgroundImage projectCard d-flex align-items-center justify-content-center p-5"
         onClick={handleOpenModal}
       >
         <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
@@ -53,9 +53,9 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
           <h3 className="projectTitle">{title}</h3>
           <span className="viewWork">Ver trabajo &#8594;</span>
         </div>
-        <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
+        {/*         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
           <img src={image} alt="Laptop displaying the application" />
-        </div>
+        </div> */}
       </div>
       <div className="divModal">
         <Modal
@@ -114,7 +114,7 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
           </button>
         </Modal>
       </div>
-    </motion.div>
+    </motion.div >
   );
 };
 

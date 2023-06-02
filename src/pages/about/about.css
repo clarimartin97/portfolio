@@ -1,11 +1,10 @@
-
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: var(--spacing);
+  z-index: 1;
 }
-
 
 .personalImage {
   display: flex;
@@ -41,7 +40,6 @@
   color: var(--secondary-text-color);
 }
 
-
 .info {
   padding-left: 0;
 }
@@ -50,7 +48,6 @@
   color: var(--text-color);
   text-align: justify;
   display: inline-block;
-  width: 100%;
 }
 
 .infoContainer p {
@@ -93,8 +90,6 @@ p.disponibilidad {
   .about .socialIcons .icon {
     display: inline;
   }
-
- 
 }
 
 @media (min-width: 992px) {
@@ -105,12 +100,23 @@ p.disponibilidad {
     padding: 6px;
   }
 
-
   .personalImage {
     height: 330px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .personalImage {
+    margin-bottom: 20px;
+  }
+  .infoContainer span {
+    text-align: -webkit-center;
+  }
+  .buttonContainer {
+    margin-left: 10px;
   }
 }
