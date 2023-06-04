@@ -75,6 +75,12 @@ const SliderProyects = ({ image1, video, image2, image3 }) => {
                             muted={true}
                             width="250px"
                             height="300px"
+                            config={{
+                                youtube: {
+                                    playerVars: { origin: 'https://portfolio-claramartin.vercel.app/' }
+                                }
+                            }}
+
                         />
                     </div>
                 )}
