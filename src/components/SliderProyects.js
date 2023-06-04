@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import ReactPlayer from 'react-player'
 
-const SliderProyects = ({ image1, image2, image3, image4 }) => {
+const SliderProyects = ({ image1, video, image2, image3 }) => {
     const arrowRef = useRef(null);
 
     const CustomPrevArrow = ({ onClick }) => (
@@ -63,15 +64,27 @@ const SliderProyects = ({ image1, image2, image3, image4 }) => {
                 <div className='carousel-container '>
                     <img src={image1} className='carousel-image' alt='Image 1' />
                 </div>
+                {video && (
+                    <div className='carousel-container'>
+                        <ReactPlayer
+                            url={video}
+                            className='carousel-video'
+                            controls
+                            playing
+                            volume={0.3}
+                            muted={true}
+                            width="250px"
+                            height="300px"
+                        />
+                    </div>
+                )}
                 <div className='carousel-container'>
                     <img src={image2} className='carousel-image' alt='Image 2' />
                 </div>
                 <div className='carousel-container'>
                     <img src={image3} className='carousel-image' alt='Image 3' />
                 </div>
-                <div className='carousel-container'>
-                    <img src={image4} className='carousel-image' alt='Image 4' />
-                </div>
+
             </Slider>
         </div>
     );

@@ -103,10 +103,6 @@ textarea {
   margin-bottom: var(--sm-spacing);
 }
 
-/* .contact .socialIcons {
-  display: none;
-}
- */
 .mediaWrap a:hover {
   color: #03b979;
 }

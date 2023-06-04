@@ -37,7 +37,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
-      <PageHeader title="Portafolio" description="Les muestro mi trabajo" />
+      <h3 className="pageTitle">Portafolio</h3>
       <div className="contenedorGeneral">
         <ProjectList />
       </div>

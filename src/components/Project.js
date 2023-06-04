@@ -3,10 +3,10 @@ import { useInView } from "react-intersection-observer";
 import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderProyects from "./SliderProyects";
+
 
 
 
@@ -26,11 +26,6 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
   const [showModal, setShowModal] = useState(false);
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
-  const goToDemo = deployed !== undefined && deployed !== ""
-  var buttonText = "Demo"
-  if (!goToDemo) {
-    buttonText = "Ver Demo"
-  }
 
   return (
     <motion.div
@@ -47,17 +42,12 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
         onClick={handleOpenModal}
       >
         <div className="textWrap">
-          <p className="tech">
-            <em>{technologies}</em>
-          </p>
           <h3 className="projectTitle">{title}</h3>
-          <span className="viewWork">Ver trabajo &#8594;</span>
         </div>
-        {/*         <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-          <img src={image} alt="Laptop displaying the application" />
-        </div> */}
+
       </div>
       <div className="divModal">
+
         <Modal
           isOpen={showModal}
           onRequestClose={handleCloseModal}
@@ -68,7 +58,7 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
               padding: "60px",
               display: "flex",
               flexDirection: "column",
-              width: "80%",
+              width: "70%",
               top: "50%",
               left: "50%",
               right: "auto",
@@ -86,32 +76,23 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, c
                 flexDirection: "column",
                 width: "80%",
                 maxWidth: "600px",
-                margin: "auto",
                 zIndex: "999",
                 objectFit: "contain",
               }
             },
           }}
         >
-
           <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
           <h3 className="modalTitle">{title}</h3>
-          <SliderProyects image1={image1} image2={image2} image3={image3} image4={image4}></SliderProyects>
+          <p className="tech">
+            <em>{technologies}</em>
+          </p>
+          <SliderProyects image1={image1} video={video} image2={image2} image3={image3}></SliderProyects>
           <p className="projectDescription">{description}</p>
           <button className="btn" onClick={() => (window.location.href = github)}>
             Repo de Github
           </button>
-          <button className="btn" onClick={() => {
-            if (goToDemo) {
-              window.open(deployed, '_blank')
-            }
-            else {
-              window.open(video, '_blank')
-            }
-          }
-          }>
-            {buttonText}
-          </button>
+
         </Modal>
       </div>
     </motion.div >

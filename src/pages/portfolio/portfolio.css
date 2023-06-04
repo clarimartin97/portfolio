@@ -4,14 +4,13 @@
   align-items: center;
   margin-top: var(--spacing);
   padding-bottom: var(--spacing);
-  background-color: black;
 }
 .content {
   background-color: "#101010";
   color: "#9f9f9f";
-  margin: "5vw";
-  padding: "9vw";
-  display: "flex";
+  margin: 5vw;
+  padding: 9vw;
+  display: flex;
   flex-direction: "column";
   width: "80%";
   max-width: "600px";
@@ -19,14 +18,10 @@
   z-index: 999;
   object-fit: contain;
 }
-.contenedorGeneral {
-  text-align: -webkit-center;
-  width: 92%;
-}
 
 .projectCard {
+  text-align: center;
   color: white;
-  border-radius: 3px;
   position: relative;
   transition: all 0.5s ease-in-out;
   flex-direction: column;
@@ -86,12 +81,20 @@ button.next {
   height: 100%;
   object-fit: cover;
 }
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-video:hover {
+  transform: scale(2.6);
+}
 .carousel-container img:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 .textWrap {
   transition: all 0.9s ease-in-out;
-  z-index: 1;
 }
 
 .projectLink {
@@ -100,9 +103,6 @@ button.next {
 
 .imageContainer img {
   height: 12em;
-  margin-top: 25px;
-  margin-right: 180px;
-  transition: all 1.3s ease-in-out;
 }
 
 .imageCont img {
@@ -113,7 +113,8 @@ button.next {
 
 .tech {
   font-size: 12px;
-  white-space: nowrap;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .viewWork {
@@ -121,8 +122,9 @@ button.next {
 }
 
 .projectTitle {
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px 0;
+  text-align: center;
 }
 
 .githubLink {
@@ -130,6 +132,7 @@ button.next {
 }
 
 .projectCard::before {
+  text-align: center;
   content: "";
   display: grid !important;
   position: absolute;
@@ -166,7 +169,9 @@ button.next {
   align-self: center;
   text-align: -webkit-center;
   text-align: justify;
-  width: 80%;
+  width: 65%;
+  padding: 2% 0 2% 0;
+  text-align: justify;
 }
 
 @media (min-width: 750px) {
@@ -174,6 +179,7 @@ button.next {
     flex-direction: row;
     padding: var(--sm-spacing) !important;
     height: 350px;
+    align-self: center;
   }
 
   .portfolio {
@@ -191,11 +197,11 @@ button.next {
   }
 
   .projectCard:hover .imageContainer {
-    transform: translateX(-70%);
+    transform: scale(1.5);
   }
 
   .projectCard:hover .textWrap {
-    transform: translateX(-250%);
+    transform: scale(0.8);
   }
 
   .projectCard:hover::before {
@@ -203,10 +209,10 @@ button.next {
   }
 
   .projectCard:hover .imageContainer img {
-    scale: 1.4;
+    transform: scale(1.4);
   }
   .projectCard:hover .imageCont img {
-    scale: 1.4;
+    transform: scale(1.4);
   }
 
   .imageContainer {
@@ -220,11 +226,18 @@ button.next {
 
   .textWrap {
     text-shadow: none;
+    display: flex;
+    justify-content: center;
   }
 
   .projectTitle {
-    font-size: 30px;
+    text-align: center;
+    font-size: 60px;
     padding: 10px 0;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+    padding-top: 7vh;
+    text-shadow: 5px -4px 14px black;
   }
 
   .viewWork {
@@ -242,6 +255,7 @@ button.next {
     display: grid;
     grid-template-columns: 39% 60%;
     column-gap: 1%;
+    text-align: center;
   }
   .row2 {
     display: grid;
@@ -260,12 +274,26 @@ button.next {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
   .projectCard {
-    margin: 1em;
-    margin-inline-start: auto;
+    text-align: center;
+    margin: 1em auto;
   }
   .projectDescription {
     font-size: 12px;
+  }
+  .projectTitle {
+    font-size: 37px;
+    text-align: center;
+    padding: 5vh 5vh 0 5vh;
+    min-width: min-content;
+    text-shadow: 5px -4px 14px black;
+  }
+}
+
+@media (max-width: 750px) {
+  .projectTitle {
+    font-size: 40px;
+    text-align: center;
   }
 }
