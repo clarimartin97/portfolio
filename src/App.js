@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import { useState } from "react";
+import Landing from "./components/Landing";
 
 function App() {
   const personalDetails = {
@@ -9,12 +11,21 @@ function App() {
     availability: "Abierta a nuevas oportunidades laborales",
   };
 
-  return (
-    <>
-      <Header />
-      <AnimatedRoutes personalDetails={personalDetails} />
-    </>
-  );
+  const [showLoader, setShowLoader] = useState(true);
+  setTimeout(() => {
+    setShowLoader(false);
+  }, 8000);
+
+  if (showLoader) {
+    return <Landing name={personalDetails.name} />;
+  } else {
+    return (
+      <>
+        <Header />
+        <AnimatedRoutes personalDetails={personalDetails} />
+      </>
+    );
+  }
 }
 
 export default App;

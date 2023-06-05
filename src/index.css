@@ -73,32 +73,32 @@ body {
 
 div.primero {
   width: auto;
-  background-color: #f37737;
+  background-color: #6e5773;
   height: 30vh;
 }
 div.segundo {
   width: auto;
-  background-color: #009e66;
+  background-color: #2c3e50;
   height: 30vh;
 }
 div.tercero {
   width: auto;
-  background-color: #4590a3;
+  background-color: #4b0082;
   height: 30vh;
 }
 div.cuarto {
   width: auto;
-  background-color: #81f344;
+  background-color: #800080;
   height: 30vh;
 }
 div.quinto {
   width: auto;
-  background-color: #ff4010;
+  background-color: #800080;
   height: 30vh;
 }
 div.sexto {
   width: auto;
-  background-color: #4040ff;
+  background-color: #405c75;
   height: 30vh;
 }
 
@@ -275,9 +275,6 @@ header {
   }
 }
 @media (max-width: 750px) {
-  .btn {
-    width: -webkit-fill-available;
-  }
   .links.open {
     background-color: #0c0c0c;
     /* border-radius: 16px; */
@@ -306,5 +303,8 @@ header {
 @media (max-width: 950px) {
   .contenido {
     top: 12%;
+  }
+  .btn {
+    width: -webkit-fill-available;
   }
 }

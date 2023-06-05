@@ -100,7 +100,7 @@ const SliderProyects = ({ image1, video, image2, image3 }) => {
                     <img src={image1} className="carousel-image" alt="Image 1" />
                 </div>
                 {video && (
-                    <div className="carousel-container">
+                    <div className="carousel-container div-wrapper">
                         <ReactPlayer
                             url={video}
                             className={`slick-slide slick-current carousel-video ${isVideoExpanded ? "expanded" : ""
