@@ -63,6 +63,8 @@ button.next {
 
 .contenedorSlider {
   position: relative;
+  width: 80%;
+  align-self: center;
 }
 .carousel-container {
   max-width: 100%;
@@ -71,9 +73,8 @@ button.next {
   padding: 20px;
 }
 .carousel-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain !important;
+  width: 80%;
+  height: 250px;
 }
 
 .carousel-video {
@@ -188,7 +189,6 @@ img.closeButton {
   align-self: center;
   text-align: -webkit-center;
   text-align: justify;
-  width: 65%;
   padding: 2% 0 2% 0;
   text-align: justify;
 }

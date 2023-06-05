@@ -7,8 +7,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderProyects from "./SliderProyects";
 
-
-const Project = ({ technologies, title, image, image1, image2, image3, image4, backImage, background, id, github, deployed, video, description }) => {
+const Project = ({
+  technologies,
+  title,
+  image,
+  image1,
+  image2,
+  image3,
+  image4,
+  backImage,
+  background,
+  id,
+  github,
+  deployed,
+  video,
+  description,
+}) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -35,7 +49,6 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, b
   return (
     <motion.div
       ref={ref}
-
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -49,10 +62,8 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, b
         <div className="textWrap">
           <h3 className="projectTitle">{title}</h3>
         </div>
-
       </div>
       <div className="divModal">
-
         <Modal
           isOpen={showModal}
           onRequestClose={handleCloseModal}
@@ -83,24 +94,37 @@ const Project = ({ technologies, title, image, image1, image2, image3, image4, b
                 maxWidth: "600px",
                 zIndex: "999",
                 objectFit: "contain",
-              }
+              },
             },
           }}
         >
-          <img src={closeModal} className="closeMenu closeModal" onClick={handleCloseModal} alt="Close"></img>
+          <img
+            src={closeModal}
+            className="closeMenu closeModal"
+            onClick={handleCloseModal}
+            alt="Close"
+          ></img>
           <h3 className="modalTitle">{title}</h3>
           <p className="tech">
             <em>{technologies}</em>
           </p>
-          <SliderProyects image1={image1} video={video} image2={image2} image3={image3} image4={image4}></SliderProyects>
+          <SliderProyects
+            image1={image1}
+            video={video}
+            image2={image2}
+            image3={image3}
+            image4={image4}
+          ></SliderProyects>
           <p className="projectDescription">{description}</p>
-          <button className="btn" onClick={() => (window.location.href = github)}>
+          <button
+            className="btn"
+            onClick={() => (window.location.href = github)}
+          >
             Repo de Github
           </button>
-
         </Modal>
       </div>
-    </motion.div >
+    </motion.div>
   );
 };
 
