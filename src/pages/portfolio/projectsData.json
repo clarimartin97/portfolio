@@ -1,35 +1,6 @@
 
 [
-  { 
-    "title": "EmpleoYa",
-    "image": "./projectImages/empleoYa.svg",
-    "image1": "./projectImages/1.png",
-    "image2": "./projectImages/2.png",
-    "image3": "./projectImages/3.png",
-    "image4": "./projectImages/4.png",
-    "description": "Esta aplicación móvil ofrece una solución conveniente para estudiantes ocupados y trabajadores que buscan ingresos adicionales.",
-    "technologies": "React Native | JavaScript | HTML | Mongoose",
-    "github": "https://github.com/clarimartin97/empleoYa-frontend",
-    "deployed": "",
-    "video": "https://youtu.be/dTah1o5f9A0",
-    "bgcolor": "./projectImages/1.png",
-    "id": "1"
-  },
-  {
-    "title": "Marvel App",
-    "image": "./projectImages/marvelApp.svg",
-    "image1": "./projectImages/1.png",
-    "image2": "./projectImages/2.png",
-    "image3": "./projectImages/3.png",
-    "image4": "./projectImages/4.png",
-    "technologies": "React Native | HTML | CSS",
-    "description": "Esta aplicación móvil brinda una experiencia completa a los fanáticos de Marvel al permitirles explorar y aprender sobre los personajes icónicos del universo Marvel. Utiliza la API de Marvel para proporcionar información detallada de manera clara y accesible a los usuarios.",
-    "github": "https://github.com/clarimartin97/marvelApp",
-    "deployed": "",
-    "video":"https://youtube.com/shorts/KXcfTj5qN4Y",
-    "bgcolor": "./projectImages/marvelBoard.png",
-    "id": "2"
-  },
+
   {
     "title": "Avengers Web",
     "image": "./projectImages/avengers.svg",
@@ -42,11 +13,18 @@
     "github": "https://github.com/clarimartin97/AvengersReact",
     "deployed": "",
     "video": "https://youtu.be/iOPvEme3iGQ",
-    "bgcolor": "./projectImages/2.png",
+    "backImage": "./projectImages/marvelWeb.png",
+    "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
     "id": "3"
   },
-  {
-    "title": "OrgulloLocal",
+
+    {
+    "title": "Orgullo Local",
     "image": "./projectImages/iPhoneNacional.svg",
     "image1": "./projectImages/1.png",
     "image2": "./projectImages/2.png",
@@ -57,8 +35,57 @@
     "github": "https://github.com/clarimartin97/DAP---OB2",
     "deployed": "",
     "video":"https://youtu.be/oioGQDlLNZo",
-    "bgcolor": "./projectImages/nacionalBoard.png",
+    "backImage": "./projectImages/nacionalBoard.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
     "id": "4"
+  },
+  
+  {
+    "title": "Apple",
+    "image": "./projectImages/apple.svg",
+    "image1": "./projectImages/1.png",
+    "image2": "./projectImages/2.png",
+    "image3": "./projectImages/3.png",
+    "image4": "./projectImages/4.png",
+    "technologies": "HTML | JavaScript | CSS",
+    "description": "La página web interna de Apple ayuda a los empleados a registrar y rastrear los dispositivos ingresados al local de la empresa. La interfaz fácil de usar permite agregar información detallada sobre cada dispositivo, incluyendo modelo, número de serie y estado.",
+    "github": "https://github.com/clarimartin97/PW2---OB1",
+    "deployed": "",    
+    "video":"https://youtu.be/EFNlmZowGGk",
+    "backImage": "./projectImages/Cover.png",
+    "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "start",
+    "repeat": "no-repeat"
+  },
+    "id": "7"
+  },
+   {
+    "title": "Marvel App",
+    "image": "./projectImages/marvelApp.svg",
+    "image1": "./projectImages/1.png",
+    "image2": "./projectImages/2.png",
+    "image3": "./projectImages/3.png",
+    "image4": "./projectImages/4.png",
+    "technologies": "React Native | HTML | CSS",
+    "description": "Esta aplicación móvil brinda una experiencia completa a los fanáticos de Marvel al permitirles explorar y aprender sobre los personajes icónicos del universo Marvel. Utiliza la API de Marvel para proporcionar información detallada de manera clara y accesible a los usuarios.",
+    "github": "https://github.com/clarimartin97/marvelApp",
+    "deployed": "",
+    "video":"https://youtube.com/shorts/KXcfTj5qN4Y",
+    "backImage": "./projectImages/marvelBoard.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
+    "id": "1"
   },
 
   {
@@ -73,12 +100,18 @@
     "github": "https://github.com/clarimartin97/obligatorio2",
     "deployed": "https://adoptaunanimal.vercel.app/",
     "video":"https://youtu.be/CsJLka90nDg",
-    "bgcolor": "./projectImages/adopcionCodigo.png",
+    "backImage": "./projectImages/adoptaCodigo.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "start",
+    "repeat": "no-repeat"
+  },
     "id": "5"
   },
 
   {
-    "title": "SongArchive",
+    "title": "Song Archive",
     "image": "./projectImages/listadoDeCanciones.svg",
     "image1": "./projectImages/1.png",
     "image2": "./projectImages/2.png",
@@ -89,26 +122,38 @@
     "github": "https://github.com/clarimartin97/PW2---OB2",
     "deployed": "",
     "video":"https://youtu.be/CsJLka90nDg",
-    "bgcolor": "./projectImages/nacionalBoard.png",
+    "backImage": "./projectImages/SongBoard.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
     "id": "6"
   },
-  {
-    "title": "Apple",
-    "image": "./projectImages/apple.svg",
+    { 
+    "title": "Empleo Ya",
+    "image": "./projectImages/empleoYa.svg",
     "image1": "./projectImages/1.png",
     "image2": "./projectImages/2.png",
     "image3": "./projectImages/3.png",
     "image4": "./projectImages/4.png",
-    "technologies": "HTML | JavaScript | CSS",
-    "description": "La página web interna de Apple ayuda a los empleados a registrar y rastrear los dispositivos ingresados al local de la empresa. La interfaz fácil de usar permite agregar información detallada sobre cada dispositivo, incluyendo modelo, número de serie y estado.",
-    "github": "https://github.com/clarimartin97/PW2---OB1",
-    "deployed": "",    
-    "video":"https://youtu.be/EFNlmZowGGk",
-    "bgcolor": "./projectImages/3.png",
-    "id": "7"
+    "description": "Esta aplicación móvil ofrece una solución conveniente para estudiantes ocupados y trabajadores que buscan ingresos adicionales.",
+    "technologies": "React Native | JavaScript | HTML | Mongoose",
+    "github": "https://github.com/clarimartin97/empleoYa-frontend",
+    "deployed": "",
+    "video": "https://youtu.be/dTah1o5f9A0",
+    "backImage": "./projectImages/backPhone.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
+    "id": "2"
   },
   {
-    "title": "ClimaBike",
+    "title": "Clima Bike",
     "image": "./projectImages/appClimaBicis.svg",
     "image1": "./projectImages/1.png",
     "image2": "./projectImages/2.png",
@@ -119,11 +164,17 @@
     "github": "https://github.com/clarimartin97/PW2---OB1-2",
     "deployed": "",
     "video":"https://youtu.be/qwQpduU23PI",
-    "bgcolor": "./projectImages/bicisCodigo.png",
+    "backImage": "./projectImages/bikeCodigo.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "start",
+    "repeat": "no-repeat"
+  },
     "id": "8"
   },
   {
-    "title": "CryptoConvertidor",
+    "title": "Crypto Convertidor",
     "image": "./projectImages/iPhoneCripto.svg",
     "image1": "./projectImages/1.png",
     "image2": "./projectImages/2.png",
@@ -134,7 +185,13 @@
     "github": "https://github.com/clarimartin97/criptoconvertidor",
     "deployed": "",
     "video":"https://www.youtube.com/watch?v=Q7rte0zU6is",
-    "bgcolor": "./projectImages/4.png",
+    "backImage": "./projectImages/crypto.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat"
+  },
     "id": "9"
   },
   {
@@ -149,7 +206,13 @@
     "github": "https://github.com/clarimartin97/DW2-OB2",
     "deployed": "",
     "video":"https://youtu.be/JYtxD_S6dZ8",
-    "bgcolor": "./projectImages/paulaCodigo.png",
+    "backImage": "./projectImages/PaulaCodigo.png",
+     "background": {
+    "color": "#f2f2f2",
+    "size": "cover",
+    "position": "start",
+    "repeat": "no-repeat"
+  },
     "id": "10"
   }
 ]

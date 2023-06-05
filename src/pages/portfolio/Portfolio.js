@@ -25,10 +25,11 @@ const Portfolio = () => {
             image2={project.image2}
             image3={project.image3}
             image4={project.image4}
-            color={project.bgcolor}
+            backImage={project.backImage}
             github={project.github}
             deployed={project.deployed}
             video={project.video}
+            background={project.background}
             description={project.description}
           />
         ))}
