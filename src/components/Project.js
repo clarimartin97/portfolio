@@ -14,7 +14,6 @@ const Project = ({
   image1,
   image2,
   image3,
-  image4,
   backImage,
   background,
   id,
@@ -103,7 +102,6 @@ const Project = ({
             video={video}
             image2={image2}
             image3={image3}
-            image4={image4}
           ></SliderProyects>
           <p className="projectDescription">{description}</p>
           <button

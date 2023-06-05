@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ReactPlayer from "react-player";
 
-const SliderProyects = ({ image1, video, image2, image3, image4 }) => {
+const SliderProyects = ({ image1, video, image2, image3 }) => {
     const arrowRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [isVideoExpanded, setIsVideoExpanded] = useState(false);
